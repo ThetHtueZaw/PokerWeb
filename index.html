@@ -9,7 +9,7 @@
   </head>
   <body>
     <div id="unity-container" class="unity-desktop">
-      <canvas id="unity-canvas" width=960 height=600 tabindex="-1"></canvas>
+      <canvas id="unity-canvas" width=900 height=600 tabindex="-1"></canvas>
       <div id="unity-loading-bar">
         <div id="unity-logo"></div>
         <div id="unity-progress-bar-empty">
@@ -57,11 +57,11 @@
       }
 
       var buildUrl = "Build";
-      var loaderUrl = buildUrl + "/TexasPokerWeb.loader.js";
+      var loaderUrl = buildUrl + "/PokerWeb.loader.js";
       var config = {
-        dataUrl: buildUrl + "/TexasPokerWeb.data.unityweb",
-        frameworkUrl: buildUrl + "/TexasPokerWeb.framework.js.unityweb",
-        codeUrl: buildUrl + "/TexasPokerWeb.wasm.unityweb",
+        dataUrl: buildUrl + "/PokerWeb.data.unityweb",
+        frameworkUrl: buildUrl + "/PokerWeb.framework.js.unityweb",
+        codeUrl: buildUrl + "/PokerWeb.wasm.unityweb",
         streamingAssetsUrl: "StreamingAssets",
         companyName: "DefaultCompany",
         productName: "TexasPokerTest",
@@ -94,7 +94,7 @@
       } else {
         // Desktop style: Render the game canvas in a window that can be maximized to fullscreen:
 
-        canvas.style.width = "960px";
+        canvas.style.width = "900px";
         canvas.style.height = "600px";
       }
 
